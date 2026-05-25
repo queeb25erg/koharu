@@ -67,3 +67,7 @@ strip = true
 opt-level = 0
 debug = true
 incremental = true
+
+# Personal dev override: speed up rebuilds on my machine by splitting into more units
+[profile.dev.package."*"]
+opt-level = 1
